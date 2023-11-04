@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-todo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    margin-bottom: 10px;
+}
+.inputed-task, #inputed-time{
+    font-size: 15px;
+    padding: 6px;
+}
+.inputed-task{
+    height: 22px;
+    width: 200px;
+}
+#inputed-time{
+    width: 155px;
+    height: 22px;
+}
+.add-btn{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-size: 15px;
+    cursor: pointer;
+    height: 37px;
+    width: 80px;
+    transition: 0.5s;
+}
+.de{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 3px;
+    margin-left: 57px;
+    padding: 6px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .5s ease;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+.de:hover{
+    background-color: red;
+}
+.sd{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    margin: 10px 0px;
+    
+}
+.name{
+    display: flex;
+    align-items: center;
+    height: 25px;
+    width: 200px;
+    margin-left: 5px;
+    overflow: auto;
+}
+.time{
+    width: 148px;
+    padding: 6px;
+}
+.reset{
+    width: 70px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.reset:hover{
+    background-color: black;
+    color: white;
+}
+.add-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+#vehicle1{
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+}
+#vehicle1:checked{
+    accent-color: rgb(30, 231, 30);
+}
+.stop{
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.stop:hover{
+    background-color: black;
+    color: white;
+}
