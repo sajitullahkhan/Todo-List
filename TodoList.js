@@ -3,7 +3,7 @@
 let todoList = [] //JSON.parse(localStorage.getItem('Tasks'));
 
 let audio = new Audio('mixkit-battleship-alarm-1001.wav')
-function ringingBell (){
+function ringingBell() {
     audio.play();
 }
 
@@ -13,7 +13,7 @@ function addTodoList() {
     let todoListHTML = '';
 
     todoList.forEach((todoObject, index) => {
-        let { name, alarmTime} = todoObject;
+        let { name, alarmTime } = todoObject;
         let html = `
             <div class='sd'>
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"><div class="name">${name}</div>
@@ -39,7 +39,6 @@ document.querySelector('.add-btn').addEventListener('click', () => {
     } else {
         let intElement = document.querySelector('.inputed-task');
         let name = intElement.value;
-        console.log(intElement)
         let timeElement = document.querySelector('#inputed-time');
         let alarmTime = timeElement.value;
 
@@ -50,15 +49,15 @@ document.querySelector('.add-btn').addEventListener('click', () => {
         intElement.value = '';
         addTodoList();
 
-        
+
         let alarmTimedate = new Date(timeElement.value);
         now = new Date();
-        let alarmAt = alarmTimedate - now
-        if(alarmAt >= 0){
-            setTimeout(()=>{
+        let alarmAt = alarmTimedate - now;
+        if (alarmAt >= 0) {
+            setTimeout(() => {
                 ringingBell();
             }, alarmAt)
-        }
+        };
     }
 });
 //localStorage.setItem('Tasks', JSON.stringify(todoList));

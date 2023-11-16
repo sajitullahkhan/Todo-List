@@ -9,27 +9,34 @@ body {
     align-items: center;
     justify-content: center;
 }
-.div-todo{
+
+.div-todo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.header{
+
+.header {
     margin-bottom: 10px;
 }
-.inputed-task, #inputed-time{
+
+.inputed-task,
+#inputed-time {
     font-size: 15px;
     padding: 6px;
 }
-.inputed-task{
+
+.inputed-task {
     height: 22px;
     width: 200px;
 }
-#inputed-time{
+
+#inputed-time {
     width: 155px;
     height: 22px;
 }
-.add-btn{
+
+.add-btn {
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: 1px solid black;
@@ -39,7 +46,8 @@ body {
     width: 80px;
     transition: 0.5s;
 }
-.de{
+
+.de {
     background-color: transparent;
     color: rgb(0, 0, 0);
     border: none;
@@ -55,22 +63,25 @@ body {
     transition: all .5s ease;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 20px;
 }
-.de:hover{
+
+.de:hover {
     background-color: red;
 }
-.sd{
+
+.sd {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border-bottom: 2px solid black;
     margin: 10px 0px;
-    
+
 }
-.name{
+
+.name {
     display: flex;
     align-items: center;
     height: 25px;
@@ -78,11 +89,13 @@ h1{
     margin-left: 5px;
     overflow: auto;
 }
-.time{
+
+.time {
     width: 148px;
     padding: 6px;
 }
-.reset{
+
+.reset {
     width: 70px;
     height: 30px;
     background-color: transparent;
@@ -91,24 +104,28 @@ h1{
     cursor: pointer;
     transition: 0.5s;
 }
-.reset:hover{
-    background-color: black;
-    color: white;
-}
-.add-btn:hover{
+
+.reset:hover {
     background-color: black;
     color: white;
 }
 
-#vehicle1{
+.add-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+#vehicle1 {
     cursor: pointer;
     height: 25px;
     width: 25px;
 }
-#vehicle1:checked{
+
+#vehicle1:checked {
     accent-color: rgb(30, 231, 30);
 }
-.stop{
+
+.stop {
     width: 80px;
     height: 30px;
     background-color: transparent;
@@ -117,7 +134,8 @@ h1{
     cursor: pointer;
     transition: 0.5s;
 }
-.stop:hover{
+
+.stop:hover {
     background-color: black;
     color: white;
 }
